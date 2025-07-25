@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+._header{
+    display:flex;
+    height: 80px;
+    background-color: PINK;
+    justify-content: space-between;
+    align-items: center;
+}                  
+
+._myntralogo{
+    height: 36px;
+}
+
+._logo{
+    margin-left: 4%;
+}
+
+._action{
+    margin-right: 4%;
+}
+
+._nav{
+    display:flex;
+    min-width: 500px;
+    justify-content: space-between;
+}
+
+._nav a{
+    color:#282C3F;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-decoration: none;
+}
+
+._nav a sup{
+    font: 13px;
+    color: #FF3F6C;
+}
+
+._search{
+    height: 40px;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+._searchicon{
+    height: 21px;
+    width: 21px;
+
+}
+
+._searchinput{
+    color: #696e79 ;
+    background-color: #F5F5F6;
+    flex-grow: 1;
+}
