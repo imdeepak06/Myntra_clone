@@ -7,22 +7,28 @@
 ._header{
     display:flex;
     height: 80px;
-    background-color: PINK;
+    background-color: #FFFFFF;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #b6b1b1;
 }                  
 
 ._myntralogo{
-    height: 36px;
+    height: 54px;
 }
 
 ._logo{
     margin-left: 4%;
 }
 
-._action{
-    margin-right: 4%;
+._logopart{
+    display: flex;
+    align-items: center;
 }
+
+ ._action{
+     margin-right: 4%;
+ }
 
 ._nav{
     display:flex;
@@ -39,6 +45,10 @@
     text-decoration: none;
 }
 
+._nav a:hover{
+    border-bottom: 2px solid #f54e77;
+}
+
 ._nav a sup{
     font: 13px;
     color: #FF3F6C;
@@ -47,18 +57,46 @@
 ._search{
     height: 40px;
     min-width: 400px;
+    background-color: #F5F5F6;
     display: flex;
     align-items: center;
+    gap: 5px;
+    padding: 0 7px;
 }
 
 ._searchicon{
-    height: 21px;
-    width: 21px;
-
+    font-size: 20px; 
+    color: #282c3f;
+    
 }
 
 ._searchinput{
     color: #696e79 ;
-    background-color: #F5F5F6;
+    font-size: 14px;
     flex-grow: 1;
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+}
+
+._searchinput:focus{
+    outline: none;
+}
+
+._action{
+    height: 100%;
+    min-width: 230px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 7px;
+}
+
+._sameaction{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
