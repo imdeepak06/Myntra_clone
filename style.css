@@ -3,14 +3,18 @@
     padding:0;
     font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 
 ._header{
     display:flex;
     height: 80px;
-    background-color: #FFFFFF;
+    background-color:#ffffff;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #b6b1b1;
+    border-bottom: 2px solid #b6b1b1;
 }                  
 
 ._myntralogo{
@@ -34,6 +38,7 @@
     display:flex;
     min-width: 500px;
     justify-content: space-between;
+    height: 100%;
 }
 
 ._nav a{
@@ -43,15 +48,19 @@
     font-weight: 700;
     letter-spacing: .3px;
     text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 ._nav a:hover{
-    border-bottom: 2px solid #f54e77;
+    border-bottom: 4px solid #f54e77;
 }
 
 ._nav a sup{
-    font: 13px;
+    font-size: 12px;
     color: #FF3F6C;
+    margin-bottom: 15px;
 }
 
 ._search{
@@ -60,7 +69,7 @@
     background-color: #F5F5F6;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 5px;                          /* new */
     padding: 0 7px;
 }
 
@@ -79,7 +88,7 @@
     background-color: transparent;
 }
 
-._searchinput:focus{
+._searchinput:focus{                     /* new */             
     outline: none;
 }
 
@@ -98,5 +107,96 @@
     height: 20px;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: pointer;                   /* new */
+}
+
+
+ /* MAIN SECTION  */
+
+ ._bannercontainer{
+    margin: 50px 0;
+ }
+
+._bannercontainer img {
+    width: 100%;
+}
+
+._section1{
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+._section1 h4{
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    word-spacing: 3px;
+    font-size: 27px;
+}
+
+._section1image{
+    display: flex;
+    justify-content: space-evenly;
+}  
+
+._images1{
+    width: 19% ;
+ } 
+
+._section2 img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+._section2image {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+
+._images2{
+    width:15.7%;
+}
+
+._footer{
+    background-color: pink;
+    width: 100%;
+    display: flex;
+    padding: 80px 0px;
+    gap: 100px;
+    justify-content:center;
+}
+
+._footer1{
+    
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap:30px
+}
+._footer1 span{
+    font-weight: 700;
+}
+
+._footer2{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+}
+
+._footer3{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+}
+
+._footer4{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    display:flex
 }
