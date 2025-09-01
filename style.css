@@ -128,6 +128,88 @@ body {
 
 /* MAIN SECTION  */
 
+._maincontainer{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 15px;
+}
+
+._element{
+  width: 220px;
+  margin: 10px 0;
+}
+
+._image{
+  width:100%;
+}
+
+._image img{
+  width:100%;
+}
+
+._imageline{
+  width: 100%;
+}
+
+._b1name{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+._b2name{
+  width: 100%;
+    color: #535766;
+    font-size: 14px;
+    line-height:1.5;
+    overflow: hidden;text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  ._b3name{
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+  }
+
+  ._b4name{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #282c3f;
+    margin-right: 10px;
+  }
+
+  ._b5name{
+    text-decoration: line-through;
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 10px;
+  }
+
+  ._b6name{
+    color: #f54e77;
+    font-size: 15px;
+  }
+
+  ._button{
+    width: 100%;
+    padding: 10px 0;
+    font-size: large;
+    background-color: aquamarine;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
 ._bannercontainer {
   margin: 50px 0;
 }
