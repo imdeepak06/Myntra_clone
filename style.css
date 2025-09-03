@@ -12,10 +12,13 @@ body {
 ._header {
   display: flex;
   height: 80px;
+  width:100%;
   background-color: #ffffff;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top:0;
 }
 
 ._myntralogo {
@@ -116,7 +119,22 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer; /* new */
+  position: relative;
 }
+
+._count{
+  position:absolute;
+  left: 12px;
+  bottom:15px;
+  background-color: red;
+  color: #f5f5f6;
+  border-radius: 50px;
+  width:21px;
+  height:21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
 ._actionhamburger {
   display: none;
@@ -127,6 +145,10 @@ body {
 }
 
 /* MAIN SECTION  */
+
+main{
+  margin-top: 120px;
+}
 
 ._maincontainer{
   width:100%;

@@ -1,4 +1,7 @@
+let arr=[];
 
+
+counting();
 displayItemHomePage();
 
 
@@ -21,10 +24,36 @@ function displayItemHomePage() {
             <span class="_b4name">Rs. ${prod.price}</span>
             <span class="_b5name">Rs. ${prod.price} </span>
             <span class="_b6name">${prod.discount}% OFF</span>
-            <button class="_button">Add to Cart</button>
+            <button class="_button" onClick="addToCart(${prod.id})">Add to Cart</button>
           </div>
         </div>`;
   });
 
   mainContainer.innerHTML = mainContainerHtml;
+}
+
+function addToCart(ide){
+  let hasItem=false;
+  for(i=0; i<arr.length;i=i+1){
+    if( arr[i]==ide){
+      hasItem= true;
+      break;
+    }
+  }
+  if (!hasItem){
+       arr.push(ide)
+       let count=document.querySelector("._count");
+       count.innerHTML=arr.length;
+       counting();
+      }
+}
+
+function counting(){
+  let count=document.querySelector("._count");
+  if (arr.length ==0){
+    count.style.visibility="hidden"
+  }
+  else{
+    count.style.visibility="visible"
+  }
 }
