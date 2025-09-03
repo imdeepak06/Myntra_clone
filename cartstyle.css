@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+}
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+._header {
+  display: flex;
+  height: 80px;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  padding: 0 50px;
+}
+
+._myntralogo {
+  height: 60px;
+}
+
+._logopart {
+  display: flex;
+  align-items: center;
+}
+
+._bag{
+    color: #20bd99;
+    font-size: 15px;
+    border-bottom: 2px solid #20bd99;
+}
+
+._bag1{
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+._cartright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+._cartright img{
+  width: 30px;
+}
+
+/* MAIN SECTION  */
+
+main{
+  margin-top: 120px;
+}
+
+._completebody{
+    display: flex;
+}
+
+._leftbody{
+  display: flex;
+  width:500px;
+  background-color: #FFF6F4;
+}
